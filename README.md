@@ -10,17 +10,20 @@ As part of our university project, we developed an attack enabling
 
 ## Installation
 
-(I) Download the files 
+(a) Download the files 
 ```bash
 git clone https://github.com/danshl/Arp-spoof.git
 ```
-(II) Install dependencies - To install the required dependencies for this project, run the following command:
+(b) Install dependencies - To install the required dependencies for this project, run the following command:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-(III) Activate the code as sudo by 3 parameters:
+(c) Activate the code as *sudo* by 3 parameters:
+```bash
+sudo python3 ./act.py -t TARGET_IP -g GATEWAY_IP -m MODE
+```
 
 Links
 ------
