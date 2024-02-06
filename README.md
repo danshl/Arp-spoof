@@ -7,3 +7,10 @@ As part of our university project, we developed an attack enabling
 * Additionally, ARP spoofing can be leveraged to disconnect specific devices from the network by spoofing the MAC address of the router's DEFAULTGETWAY. 
 
 *Furthermore, it can disrupt the entire network by identifying and spoofing the MAC addresses of all devices, causing widespread communication failures.
+
+## Installation
+
+To install the required dependencies for this project, run the following command:
+
+```bash
+pip install -r requirements.txt
