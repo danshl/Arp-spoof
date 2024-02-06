@@ -133,15 +133,15 @@ def act():
     global modIndex
 
     if args.mode == "1":
-        print("Mode 1 acted")
+        print("[+] Mode 1 acted - press ctrl+z to stop the process nicely")
         modIndex = 1
         Function1or2(args)
     elif args.mode == "2":
-        print("Mode 2 acted")
+        print("[+] Mode 2 acted - press ctrl+z to stop the process nicely")
         modIndex = 2
         Function1or2(args)
     elif args.mode == "3":
-        print("Mode 3 acted")
+        print("[+] Mode 3 acted  - press ctrl+z to stop the process nicely ")
         modIndex = 3
         Function3(args)
     else:
