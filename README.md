@@ -4,7 +4,7 @@ ARP spoofing is a deceptive technique used to manipulate the Address Resolution 
 As part of our university project, we developed an attack that consist:
 * Man-in-the-Middle (MITM) scenarios. This entails intercepting and altering communications between devices, potentially leading to further exploits like DNS spoofing or file tampering. (mode 1)
  
-* Additionally, ARP spoofing can be leveraged to disconnect specific devices from the network by spoofing the MAC address of the router's DEFAULTGETWAY. (mode 2)
+* Additionally, ARP spoofing can be leveraged to disconnect specific devices from the network by spoofing the MAC address of the router's default gateway. (mode 2)
 
 * Furthermore, it can disrupt the entire network by identifying and spoofing the MAC addresses of all devices, causing widespread communication failures. (mode 3)
 
@@ -14,7 +14,7 @@ As part of our university project, we developed an attack that consist:
 ```bash
 git clone https://github.com/danshl/Arp-spoof.git
 ```
-(b) Install dependencies - To install the required dependencies for this project, run the following command:
+(b) Install dependencies - to install the required dependencies for this project, run the following command:
 
 ```bash
 pip install -r requirements.txt
@@ -34,7 +34,7 @@ MODE (1, 2 or 3):
 - **Mode 2:** Block the Target IP communication with the network.
 - **Mode 3:** Block all devices' communication on the network (mix mac:ip).
 
-for more help sudo python3 ./act.py -h or send mail to dansh@post.bgu.ac.il
+For more help run "sudo python3 ./act.py -h" or send mail to dansh@post.bgu.ac.il
 
 Links
 ------
