@@ -24,6 +24,13 @@ pip install -r requirements.txt
 ```bash
 sudo python3 ./act.py -t TARGET_IP -g GATEWAY_IP -m MODE
 ```
+TARGET_IP : the victim ip.
+GATEWAY_IP : the default gateway of the router
+MODE (1, 2 or 3):
+                        Mode 1 - arp spoofing by our computer as MITM attack.
+                        Mode 2 - Block the Target IP communication with the network.
+                        Mode 3 - Block all the devices communication on the network. (mix mac:ip) 
+
 
 Links
 ------
