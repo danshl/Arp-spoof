@@ -34,10 +34,11 @@ MODE (1, 2 or 3):
 - **Mode 2:** Block the Target IP communication with the network.
 - **Mode 3:** Block all devices' communication on the network (mix mac:ip).
 
+for more help sudo python3 ./act.py -h or send mail to dansh@post.bgu.ac.il
 
 Links
 ------
-- **Documentation Flask:** https://flask.palletsprojects.com/
-- **API Google Sheets:** https://developers.google.com/sheets/api/guides/concepts
-- **API Google Drive:** https://developers.google.com/drive/api/guides/about-files
-- **Source Code:** https://github.com/danshl/WebConncectionDrive
+- **Reading materials:** https://www.golinuxcloud.com/man-in-the-middle-attack-arp-spoofing/
+- **Used in prev code:** https://www.geeksforgeeks.org/python-how-to-create-an-arp-spoofer-using-scapy/
+- **Source Code:** https://github.com/danshl/Arp-spoof.git
+
