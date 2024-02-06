@@ -1,7 +1,7 @@
 # Arp-spoof
 ARP spoofing is a deceptive technique used to manipulate the Address Resolution Protocol (ARP) tables in a network, allowing an attacker to intercept, modify, or block network traffic. 
 
-As part of our university project, we developed an attack that consist:
+As part of our university project,we developed an attack that consist:
 * Man-in-the-Middle (MITM) scenarios. This entails intercepting and altering communications between devices, potentially leading to further exploits like DNS spoofing or file tampering. (mode 1)
  
 * Additionally, ARP spoofing can be leveraged to disconnect specific devices from the network by spoofing the MAC address of the router's default gateway. (mode 2)
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 (c) Activate the code as *sudo* by 3 parameters:
 ```bash
-sudo python3 ./act.py -t TARGET_IP -g GATEWAY_IP -m MODE
+sudo python3 ./arp_code.py -t TARGET_IP -g GATEWAY_IP -m MODE
 ```
 TARGET_IP : the victim ip.
 
@@ -42,3 +42,8 @@ Links
 - **Used in prev code:** https://www.geeksforgeeks.org/python-how-to-create-an-arp-spoofer-using-scapy/
 - **Source Code:** https://github.com/danshl/Arp-spoof.git
 
+Creators
+------
+Daniel Shlomo
+Daniel Elianov
+Ron Haikin
