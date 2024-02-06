@@ -34,7 +34,7 @@ MODE (1, 2 or 3):
 - **Mode 2:** Block the Target IP communication with the network.
 - **Mode 3:** Block all devices' communication on the network (mix mac:ip).
 
-For more help run "sudo python3 ./act.py -h" or send mail to dansh@post.bgu.ac.il
+For more help run "sudo python3 ./arp_code.py -h" or send mail to dansh@post.bgu.ac.il
 
 Links
 ------
