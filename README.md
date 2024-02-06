@@ -10,7 +10,16 @@ As part of our university project, we developed an attack enabling
 
 ## Installation
 
-To install the required dependencies for this project, run the following command:
+(I) Install dependencies - To install the required dependencies for this project, run the following command:
 
 ```bash
 pip install -r requirements.txt
+
+(II)
+
+Links
+------
+- **Documentation Flask:** https://flask.palletsprojects.com/
+- **API Google Sheets:** https://developers.google.com/sheets/api/guides/concepts
+- **API Google Drive:** https://developers.google.com/drive/api/guides/about-files
+- **Source Code:** https://github.com/danshl/WebConncectionDrive
