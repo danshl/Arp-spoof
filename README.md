@@ -44,8 +44,4 @@ Links
 
 Creators
 ------
-Daniel Shlomo
-
-Daniel Elianov
-
-Ron Haikin
+Daniel Shlomo , Daniel Elianov and Ron Haikin.
